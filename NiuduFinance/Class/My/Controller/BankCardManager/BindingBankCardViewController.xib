@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BindingBankCardViewController">
+            <connections>
+                <outlet property="bankNumLabel" destination="zOV-08-jJk" id="vah-2t-5yj"/>
+                <outlet property="submitButton" destination="4OA-06-wYQ" id="LTL-FD-HgR"/>
+                <outlet property="tableview" destination="XAM-17-60V" id="OFR-ZH-eay"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dni-JN-QhH">
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="绑定银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hzA-rA-yjp">
+                            <constraints>
+                                <constraint firstAttribute="width" constant="85" id="TZc-ui-tkV"/>
+                                <constraint firstAttribute="height" constant="25" id="oaq-qK-zjs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.2150240384615385" green="0.2150240384615385" blue="0.2150240384615385" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="请输入银行卡号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zOV-08-jJk">
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="zOV-08-jJk" firstAttribute="bottom" secondItem="hzA-rA-yjp" secondAttribute="bottom" id="8qX-nr-5gF"/>
+                        <constraint firstItem="hzA-rA-yjp" firstAttribute="leading" secondItem="dni-JN-QhH" secondAttribute="leading" constant="15" id="ESh-sN-qKQ"/>
+                        <constraint firstItem="zOV-08-jJk" firstAttribute="top" secondItem="hzA-rA-yjp" secondAttribute="top" id="aH8-Td-zbE"/>
+                        <constraint firstItem="zOV-08-jJk" firstAttribute="leading" secondItem="hzA-rA-yjp" secondAttribute="trailing" constant="10" id="bBH-Ci-o2d"/>
+                        <constraint firstAttribute="height" constant="50" id="ls1-Oj-qdi"/>
+                        <constraint firstItem="hzA-rA-yjp" firstAttribute="centerY" secondItem="dni-JN-QhH" secondAttribute="centerY" id="pOO-Xf-UXM"/>
+                        <constraint firstAttribute="trailing" secondItem="zOV-08-jJk" secondAttribute="trailing" constant="30" id="rX2-UZ-KsT"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请选择银行卡" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ia5-5g-0z9">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="21" id="AuU-aR-MMx"/>
+                        <constraint firstAttribute="width" constant="80" id="JDG-R8-V6O"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <color key="textColor" red="0.33333333333333331" green="0.33333333333333331" blue="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="XAM-17-60V">
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4OA-06-wYQ">
+                    <color key="backgroundColor" red="0.93333333330000001" green="0.3803921569" blue="0.36078431370000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="39" id="Zse-js-LnP"/>
+                        <constraint firstAttribute="height" constant="39" id="jbM-hB-dzm"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="确认">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </state>
+                    <variation key="default">
+                        <mask key="constraints">
+                            <exclude reference="Zse-js-LnP"/>
+                        </mask>
+                    </variation>
+                    <connections>
+                        <action selector="submit:" destination="-1" eventType="touchUpInside" id="MLH-VW-92b"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="dni-JN-QhH" secondAttribute="trailing" id="0NE-YM-MBd"/>
+                <constraint firstItem="4OA-06-wYQ" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="24j-vU-Pw2"/>
+                <constraint firstAttribute="bottom" secondItem="XAM-17-60V" secondAttribute="bottom" constant="80" id="BqP-2i-cpe"/>
+                <constraint firstItem="dni-JN-QhH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="Gj0-Xk-RHL"/>
+                <constraint firstAttribute="trailing" secondItem="XAM-17-60V" secondAttribute="trailing" id="SfX-NC-Qsr"/>
+                <constraint firstItem="4OA-06-wYQ" firstAttribute="top" secondItem="XAM-17-60V" secondAttribute="bottom" constant="20" id="Y6w-fD-Yv2"/>
+                <constraint firstItem="XAM-17-60V" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="igG-rq-Qtw"/>
+                <constraint firstAttribute="trailing" secondItem="4OA-06-wYQ" secondAttribute="trailing" constant="15" id="nSE-57-epY"/>
+                <constraint firstItem="dni-JN-QhH" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="pVL-Na-0ni"/>
+                <constraint firstItem="XAM-17-60V" firstAttribute="top" secondItem="Ia5-5g-0z9" secondAttribute="bottom" constant="5" id="phU-UZ-nNy"/>
+                <constraint firstItem="Ia5-5g-0z9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="15" id="r7l-Pu-SRg"/>
+                <constraint firstItem="Ia5-5g-0z9" firstAttribute="top" secondItem="dni-JN-QhH" secondAttribute="bottom" constant="5" id="xeG-BM-ezE"/>
+            </constraints>
+            <point key="canvasLocation" x="263" y="245"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

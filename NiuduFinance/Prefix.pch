@@ -1,0 +1,54 @@
+//
+//  Prefix.pch
+//  NiuduFinance
+//
+//  Created by liuyong on 16/2/24.
+//  Copyright © 2016年 liuyong. All rights reserved.
+//
+
+#define KHaveLogin      @"KHaveLogin"
+
+#ifndef Prefix_pch
+#define Prefix_pch
+
+#ifndef __IPHONE_3_0
+#warning "This project uses features only available in iOS SDK 3.0 and later."
+#endif
+
+#ifndef __OPTIMIZE__
+#define NSLog(...) NSLog(__VA_ARGS__)
+#else
+#define NSLog(...) {}
+#endif
+
+#ifdef __OBJC__
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import "MacroDefine.h"
+#import "UIView+SNFoundation.h"
+#import "UIColor+SNFoundation.h"
+#import "PSActionSheet.h"
+#import "IOSmd5.h"
+
+#import "MBProgressHUD+Add.h"
+#import <Masonry.h>
+#pragma mark ----------------------------- Config
+
+
+#pragma mark ----------------------------- Common
+
+
+#pragma mark ----------------------------- UI
+
+
+#pragma mark ----------------------------- NotifacationName
+#define kProjectTradeSearchNotifacation @"kProjectTradeSearchNotifacation"
+
+//历史搜索记录的文件路径
+#define SearchHistoryPath [[NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) lastObject] stringByAppendingPathComponent:@"historySearch.data"]
+
+SN_EXTERN  NSArray *EncodeArrayFromDic(NSDictionary *dic, NSString *key);
+
+#endif
+
+#endif /* Prefix_pch */

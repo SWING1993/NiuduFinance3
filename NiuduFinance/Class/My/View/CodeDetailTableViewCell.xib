@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="342" id="KGk-i7-Jjw" customClass="CodeDetailTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="342"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <frame key="frameInset" width="320" height="341"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YVX-JV-0Wz">
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="● 分享你的邀请码" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x79-MA-ZQc">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="3S4-cc-e17"/>
+                                    <constraint firstAttribute="width" constant="130" id="duq-y3-0KI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.19316275167785235" green="0.19287437080536912" blue="0.1916684144295302" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="● 注意事项" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X1F-rv-4d1">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="4TE-bY-3rg"/>
+                                    <constraint firstAttribute="height" constant="21" id="SYn-HB-Tfg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" red="0.19054110738255034" green="0.19575817953020133" blue="0.20191904362416108" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.您每邀请一位好友成功首投，可获相应20元，36元，50元，200元现金奖励。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aJq-wl-bRz">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="9wg-5X-gIk"/>
+                                    <constraint firstAttribute="width" constant="280" id="s8C-CJ-wbI"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.4975961538" green="0.4951923077" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.好友受邀后即可获取100元现金券，乐投新手专享标，尽享15%年化收益。" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cWk-fD-Lrl">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.4975961538" green="0.4951923077" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2.多邀多送，不限邀请好友的个数，邀请的好友数量越多，首投金额越大，邀请人获得的现金奖励就越多，现金可用于再次投资或提现" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8i-Z0-sL3">
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.4975961538" green="0.4951923077" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.好友首投标的必须是1个月及以上的，邀请人才可获取相应奖励。" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DW9-Pv-lPd">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="42" id="BLn-ne-7vb"/>
+                                    <constraint firstAttribute="width" constant="280" id="nbs-Id-X46"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="0.4975961538" green="0.4951923077" blue="0.5" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="nbs-Id-X46"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="DW9-Pv-lPd" firstAttribute="top" secondItem="X1F-rv-4d1" secondAttribute="bottom" constant="2" id="7ZC-GO-vZ0"/>
+                            <constraint firstItem="DW9-Pv-lPd" firstAttribute="leading" secondItem="cWk-fD-Lrl" secondAttribute="leading" id="D8h-EO-YEM"/>
+                            <constraint firstAttribute="height" constant="300" id="Fcz-ef-UAF"/>
+                            <constraint firstItem="x79-MA-ZQc" firstAttribute="top" secondItem="YVX-JV-0Wz" secondAttribute="top" id="L4m-Rs-b6b"/>
+                            <constraint firstItem="X1F-rv-4d1" firstAttribute="trailing" secondItem="x79-MA-ZQc" secondAttribute="trailing" constant="-10" id="T4g-d2-bDq"/>
+                            <constraint firstItem="o8i-Z0-sL3" firstAttribute="trailing" secondItem="DW9-Pv-lPd" secondAttribute="trailing" id="ULV-tz-lIQ"/>
+                            <constraint firstItem="aJq-wl-bRz" firstAttribute="leading" secondItem="x79-MA-ZQc" secondAttribute="leading" constant="15" id="VgT-km-WML"/>
+                            <constraint firstItem="X1F-rv-4d1" firstAttribute="top" secondItem="cWk-fD-Lrl" secondAttribute="bottom" constant="16" id="eT0-F5-MPC"/>
+                            <constraint firstItem="o8i-Z0-sL3" firstAttribute="top" secondItem="DW9-Pv-lPd" secondAttribute="bottom" constant="2" id="ebR-TI-VR7"/>
+                            <constraint firstItem="o8i-Z0-sL3" firstAttribute="leading" secondItem="DW9-Pv-lPd" secondAttribute="leading" id="jTC-I4-1DI"/>
+                            <constraint firstItem="x79-MA-ZQc" firstAttribute="leading" secondItem="YVX-JV-0Wz" secondAttribute="leading" constant="15" id="ki5-zr-Fre"/>
+                            <constraint firstItem="DW9-Pv-lPd" firstAttribute="trailing" secondItem="cWk-fD-Lrl" secondAttribute="trailing" id="lSc-s8-a9M"/>
+                            <constraint firstItem="cWk-fD-Lrl" firstAttribute="trailing" secondItem="aJq-wl-bRz" secondAttribute="trailing" id="oa8-fL-wUq"/>
+                            <constraint firstAttribute="trailing" secondItem="aJq-wl-bRz" secondAttribute="trailing" id="qmV-xS-Iow"/>
+                            <constraint firstItem="aJq-wl-bRz" firstAttribute="top" secondItem="x79-MA-ZQc" secondAttribute="bottom" constant="5" id="sfm-rt-wQ6"/>
+                            <constraint firstItem="cWk-fD-Lrl" firstAttribute="leading" secondItem="aJq-wl-bRz" secondAttribute="leading" id="ukB-ML-ArA"/>
+                            <constraint firstItem="X1F-rv-4d1" firstAttribute="leading" secondItem="x79-MA-ZQc" secondAttribute="leading" id="vWE-Ws-JEl"/>
+                            <constraint firstAttribute="trailing" secondItem="DW9-Pv-lPd" secondAttribute="trailing" constant="10" id="wy8-pT-CAr"/>
+                            <constraint firstItem="cWk-fD-Lrl" firstAttribute="top" secondItem="aJq-wl-bRz" secondAttribute="bottom" constant="2" id="xSl-DP-RXz"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="lSc-s8-a9M"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="YVX-JV-0Wz" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="0cn-sD-gEx"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="YVX-JV-0Wz" secondAttribute="bottom" id="V6k-g7-g97"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="YVX-JV-0Wz" secondAttribute="trailing" id="XuN-sV-jDd"/>
+                    <constraint firstItem="YVX-JV-0Wz" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="cJY-ML-yVF"/>
+                </constraints>
+                <variation key="default">
+                    <mask key="constraints">
+                        <exclude reference="V6k-g7-g97"/>
+                    </mask>
+                </variation>
+            </tableViewCellContentView>
+            <point key="canvasLocation" x="351" y="368"/>
+        </tableViewCell>
+    </objects>
+</document>

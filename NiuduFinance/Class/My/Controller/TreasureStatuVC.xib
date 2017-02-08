@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TreasureStatuVC">
+            <connections>
+                <outlet property="goMyAccountBtn" destination="7xi-dh-7MX" id="qSy-rb-LUF"/>
+                <outlet property="myAccountBtn" destination="7xi-dh-7MX" id="p5y-go-SG3"/>
+                <outlet property="statusImageView" destination="Nbo-kB-wbG" id="Jrb-ab-krt"/>
+                <outlet property="statusLabel" destination="gLI-uN-eOl" id="n51-pc-cVR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="MKt-hp-qn9">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="200" id="pck-hJ-dB5"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7xi-dh-7MX">
+                    <color key="backgroundColor" red="1" green="0.37630170239005545" blue="0.37695997204973064" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="w2K-ny-ymY"/>
+                    </constraints>
+                    <state key="normal" title="我的账号">
+                        <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Nbo-kB-wbG">
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="4UT-ef-3rG"/>
+                        <constraint firstAttribute="height" constant="60" id="95V-uV-spx"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="开户成功" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLI-uN-eOl">
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="eC6-si-C6L"/>
+                        <constraint firstAttribute="width" constant="150" id="hq8-QJ-EEl"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gLI-uN-eOl" firstAttribute="centerY" secondItem="MKt-hp-qn9" secondAttribute="centerY" constant="40" id="4oN-K4-MtP"/>
+                <constraint firstItem="MKt-hp-qn9" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Ap0-Gk-Bzm"/>
+                <constraint firstItem="gLI-uN-eOl" firstAttribute="centerX" secondItem="MKt-hp-qn9" secondAttribute="centerX" id="PwG-d0-LYC"/>
+                <constraint firstItem="MKt-hp-qn9" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="QL1-iq-a5X"/>
+                <constraint firstAttribute="trailing" secondItem="7xi-dh-7MX" secondAttribute="trailing" constant="50" id="Rhw-91-jhw"/>
+                <constraint firstItem="7xi-dh-7MX" firstAttribute="top" secondItem="MKt-hp-qn9" secondAttribute="bottom" constant="40" id="SMP-RY-DV8"/>
+                <constraint firstItem="7xi-dh-7MX" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Txi-i5-TVf"/>
+                <constraint firstItem="Nbo-kB-wbG" firstAttribute="centerY" secondItem="MKt-hp-qn9" secondAttribute="centerY" constant="-20" id="eMy-nA-A0i"/>
+                <constraint firstItem="Nbo-kB-wbG" firstAttribute="centerX" secondItem="MKt-hp-qn9" secondAttribute="centerX" id="gmd-DX-QQl"/>
+                <constraint firstAttribute="trailing" secondItem="MKt-hp-qn9" secondAttribute="trailing" id="rIp-7B-L1m"/>
+            </constraints>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,34 @@
+{
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++2696" : {
+
+    },
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++1075" : {
+
+    }
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++2696" : 9223372036854775807,
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++1075" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "578DE2EF-5E55-4550-991E-E68822E5FF8C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++2696" : "NiuduFinance\/",
+    "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++1075" : ""
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "NiuduFinance",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "NiuduFinance.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "svn:\/\/139.224.54.40",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++1075"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/win-bq8v0u94eq0\/svn\/NiuduLicaiApp",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Subversion",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2c0994ea-b79a-41a7-88e8-3a26b8d4bce5++2696"
+    }
+  ]
+}

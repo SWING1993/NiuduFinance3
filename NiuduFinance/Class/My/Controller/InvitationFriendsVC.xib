@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G1108" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="InvitationFriendsVC">
+            <connections>
+                <outlet property="tableView" destination="6Ke-39-Q1Y" id="bea-0C-fd9"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outletCollection property="buttonArray" destination="F92-ii-MUJ" id="nfF-1c-vKy"/>
+                <outletCollection property="buttonArray" destination="ZX6-d7-42L" id="JPf-7e-m7J"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hgp-zv-21P">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="42"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F92-ii-MUJ">
+                            <rect key="frame" x="0.0" y="0.0" width="177.5" height="42"/>
+                            <state key="normal" title="邀请规则">
+                                <color key="titleColor" red="0.59827733039855957" green="0.59827733039855957" blue="0.59827733039855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="Cni-XB-EIk"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZX6-d7-42L">
+                            <rect key="frame" x="197.5" y="0.0" width="177.5" height="42"/>
+                            <state key="normal" title="已邀请好友">
+                                <color key="titleColor" red="0.59827733039855957" green="0.59827733039855957" blue="0.59827733039855957" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="buttonClick:" destination="-1" eventType="touchUpInside" id="0sO-iG-qAn"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xfo-PK-ucg">
+                            <rect key="frame" x="187" y="11" width="1" height="20"/>
+                            <color key="backgroundColor" red="0.74540531635284424" green="0.74540531635284424" blue="0.74540531635284424" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="20" id="WEV-QR-ChX"/>
+                                <constraint firstAttribute="width" constant="1" id="r14-LP-EaP"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qbr-AO-II2">
+                            <rect key="frame" x="0.0" y="41" width="375" height="1"/>
+                            <color key="backgroundColor" red="0.84862625598907471" green="0.84862625598907471" blue="0.84862625598907471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="1" id="68G-r7-dcY"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="Qbr-AO-II2" secondAttribute="bottom" id="1HV-GK-3lF"/>
+                        <constraint firstAttribute="bottom" secondItem="F92-ii-MUJ" secondAttribute="bottom" id="6OT-6X-Doj"/>
+                        <constraint firstItem="ZX6-d7-42L" firstAttribute="top" secondItem="F92-ii-MUJ" secondAttribute="top" id="C0x-fD-3Vg"/>
+                        <constraint firstItem="xfo-PK-ucg" firstAttribute="centerX" secondItem="Hgp-zv-21P" secondAttribute="centerX" id="DYV-lv-mfP"/>
+                        <constraint firstItem="ZX6-d7-42L" firstAttribute="width" secondItem="F92-ii-MUJ" secondAttribute="width" id="OKQ-bm-FJf"/>
+                        <constraint firstItem="xfo-PK-ucg" firstAttribute="centerY" secondItem="Hgp-zv-21P" secondAttribute="centerY" id="afn-ir-jN9"/>
+                        <constraint firstItem="F92-ii-MUJ" firstAttribute="top" secondItem="Hgp-zv-21P" secondAttribute="top" id="d6l-Pr-WcR"/>
+                        <constraint firstAttribute="trailing" secondItem="Qbr-AO-II2" secondAttribute="trailing" id="e03-bP-hjB"/>
+                        <constraint firstItem="F92-ii-MUJ" firstAttribute="leading" secondItem="Hgp-zv-21P" secondAttribute="leading" id="iU3-Bw-V4u"/>
+                        <constraint firstAttribute="height" constant="42" id="jMp-Q5-xnf"/>
+                        <constraint firstItem="ZX6-d7-42L" firstAttribute="bottom" secondItem="F92-ii-MUJ" secondAttribute="bottom" id="nec-8S-i9n"/>
+                        <constraint firstItem="Qbr-AO-II2" firstAttribute="leading" secondItem="Hgp-zv-21P" secondAttribute="leading" id="ntD-or-HBG"/>
+                        <constraint firstItem="ZX6-d7-42L" firstAttribute="leading" secondItem="F92-ii-MUJ" secondAttribute="trailing" constant="20" id="uaP-9W-PhG"/>
+                        <constraint firstAttribute="trailing" secondItem="ZX6-d7-42L" secondAttribute="trailing" id="upG-Qz-paw"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Ke-39-Q1Y">
+                    <rect key="frame" x="0.0" y="42" width="375" height="625"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="6Ke-39-Q1Y" secondAttribute="trailing" id="1ai-of-zkW"/>
+                <constraint firstAttribute="bottom" secondItem="6Ke-39-Q1Y" secondAttribute="bottom" id="5rx-m6-7cN"/>
+                <constraint firstItem="Hgp-zv-21P" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8de-gm-tqJ"/>
+                <constraint firstAttribute="trailing" secondItem="Hgp-zv-21P" secondAttribute="trailing" id="9Qn-69-wYv"/>
+                <constraint firstItem="6Ke-39-Q1Y" firstAttribute="top" secondItem="Hgp-zv-21P" secondAttribute="bottom" id="Jwc-un-SeP"/>
+                <constraint firstItem="6Ke-39-Q1Y" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="KfF-ag-tbR"/>
+                <constraint firstItem="Hgp-zv-21P" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="w0g-bk-RPk"/>
+            </constraints>
+            <point key="canvasLocation" x="51" y="163"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4_7.fullscreen"/>
+    </simulatedMetricsContainer>
+</document>

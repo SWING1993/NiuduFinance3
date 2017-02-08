@@ -455,6 +455,7 @@
 		DFE330D91DCB119600DF1000 /* MessageCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DFE330D71DCB119600DF1000 /* MessageCellTableViewCell.xib */; };
 		DFF961961DB0C1E00077AB11 /* RechargeWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF961951DB0C1E00077AB11 /* RechargeWebViewController.m */; };
 		DFF9619A1DB0D5010077AB11 /* WebPageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF961991DB0D5010077AB11 /* WebPageVC.m */; };
+		E40BD2ED1E4AF7C400E330EE /* HttpClient.m in Sources */ = {isa = PBXBuildFile; fileRef = E40BD2EC1E4AF7C400E330EE /* HttpClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -1141,6 +1142,8 @@
 		DFF961951DB0C1E00077AB11 /* RechargeWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RechargeWebViewController.m; sourceTree = "<group>"; };
 		DFF961981DB0D5010077AB11 /* WebPageVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebPageVC.h; sourceTree = "<group>"; };
 		DFF961991DB0D5010077AB11 /* WebPageVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebPageVC.m; sourceTree = "<group>"; };
+		E40BD2EB1E4AF7C400E330EE /* HttpClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HttpClient.h; sourceTree = "<group>"; };
+		E40BD2EC1E4AF7C400E330EE /* HttpClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HttpClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -1787,6 +1790,8 @@
 				2D51A4CE1C7D58E400AF71A2 /* ReflectUtil.m */,
 				2D51A4CB1C7D58E400AF71A2 /* NetWorkingUtil.h */,
 				2D51A4CC1C7D58E400AF71A2 /* NetWorkingUtil.m */,
+				E40BD2EB1E4AF7C400E330EE /* HttpClient.h */,
+				E40BD2EC1E4AF7C400E330EE /* HttpClient.m */,
 			);
 			name = NetWorking;
 			sourceTree = "<group>";
@@ -3189,6 +3194,7 @@
 				DFDF141A1D8D3D5700CEE491 /* InvitationFriendsVC.m in Sources */,
 				9D064BBB1E31DFA600310140 /* MyDisperseInvestViewCell.m in Sources */,
 				2DCAA64B1C83F38500FDD6A5 /* ProjectIntroduceViewController.m in Sources */,
+				E40BD2ED1E4AF7C400E330EE /* HttpClient.m in Sources */,
 				0E3F754E1C8FBCAC008C9F0E /* OptionBankTypeView.m in Sources */,
 				2D51A4C71C7D58D300AF71A2 /* NSString+Adding.m in Sources */,
 				2D4126E91C7EEB3B00EFC755 /* ProgressView.m in Sources */,

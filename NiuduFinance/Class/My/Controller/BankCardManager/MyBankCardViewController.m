@@ -63,48 +63,47 @@ static NSString * const cellIdentifer = @"BankCardTableViewCell";
     self.hideNaviBar = NO;
     [_bankCardsArr removeAllObjects];
     [self getMyBankCard];
-//    [self geMyBankCard];
     
 }
-
-//- (void)getMyBankCard
-//{
-//    
-//    [self.httpUtil requestArr4MethodNam:@"v2/accept/user/getUserInfo" parameters:nil result:^(NSArray *arr, int status, NSString *msg) {
-//        if (status == 1 || status == 2) {
-//            [MBProgressHUD showError:msg toView:self.view];
-//            self.hideNoNetWork = NO;
-//            
-//        }else{
-//            self.hideNoNetWork = YES;
-//            [_bankCardsArr addObjectsFromArray:arr];
-//            
-//            NSLog(@"%@",_bankCardsArr);
-//            
-//            if (_bankCardsArr.count == 0) {
-//                self.hideNoMsg = NO;
-//            }else{
-//                self.hideNoMsg = YES;
-//            }
-//
-//        }
-//        [_tableView reloadData];
-//    } convertClassName:nil key:nil];
-//}
-
-
 
 - (void)getMyBankCard
 {
-
-    [self.httpUtil requestDic4MethodNam:@"v2/accept/user/getUserInfo" parameters:nil result:^(NSDictionary *dic, int status, NSString *msg) {
-        
-        NSLog(@"%d",status);
-        NSLog(@"%@",dic);
-
-    }];
     
+    [self.httpUtil requestArr4MethodNam:@"v2/accept/user/getUserInfo" parameters:nil result:^(NSArray *arr, int status, NSString *msg) {
+        if (status == 1 || status == 2) {
+            [MBProgressHUD showError:msg toView:self.view];
+            self.hideNoNetWork = NO;
+            
+        }else{
+            self.hideNoNetWork = YES;
+            [_bankCardsArr addObjectsFromArray:arr];
+            
+            NSLog(@"%@",_bankCardsArr);
+            
+            if (_bankCardsArr.count == 0) {
+                self.hideNoMsg = NO;
+            }else{
+                self.hideNoMsg = YES;
+            }
+
+        }
+        [_tableView reloadData];
+    } convertClassName:nil key:nil];
 }
+
+
+
+//- (void)getMyBankCard
+//{
+//
+//    [self.httpUtil requestDic4MethodNam:@"v2/accept/user/getUserInfo" parameters:nil result:^(NSDictionary *dic, int status, NSString *msg) {
+//        
+//        NSLog(@"%d",status);
+//        NSLog(@"%@",dic);
+//
+//    }];
+//    
+//}
 //- (void)geMyBankCard
 //{
 //

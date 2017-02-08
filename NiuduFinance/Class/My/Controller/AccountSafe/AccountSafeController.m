@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *iconButton;
 
 @property (nonatomic,strong)NSDictionary *myAccountDic;
+@property (nonatomic,strong)NSDictionary *myBankInfoDic;
 @property (nonatomic,strong)NSMutableArray *myAccountArr;
 //H1
 
@@ -62,13 +63,10 @@ static NSString *accountSafeCell=@"AccountSafeCell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    _myBankInfoDic = [NSDictionary dictionary];
     _myAccountDic = [NSDictionary dictionary];
     [self setupNavi];
     [self setupTableView];
-    
-    
-    
-    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -79,40 +77,7 @@ static NSString *accountSafeCell=@"AccountSafeCell";
     
     
 }
-//- (void)getAccountSaftData
-//{
-//    NetWorkingUtil *util = [NetWorkingUtil netWorkingUtil];
-//    [util requestDic4MethodName:@"user/bindindex" parameters:nil result:^(NSDictionary *dic, int status, NSString *msg) {
-//        if (status == 1 || status == 2) {
-//            _myAccountDic = dic;
-//            
-//            UIImageView *iconImageView = [[UIImageView alloc]init];
-//            [NetWorkingUtil setImage:iconImageView url:[_myAccountDic objectForKey:@"Avatar"] defaultIconName:@"my_defaultIcon"];
-//            UIImage *image = [iconImageView.image imageMakeRoundCornerSizeImageView:_iconButton.imageView];
-//            
-//            [_iconButton setImage:image forState:UIControlStateNormal];
-//            
-//
-//            _iconButton.titleLabel.text = [_myAccountDic objectForKey:@"UserName"];
-//            NSLog(@"%@",_iconButton.titleLabel.text);
-//            _userNameLabel.text = _iconButton.titleLabel.text;
-//            
-//            
-//            User *user = [User shareUser];
-//            user.realName = [_myAccountDic objectForKey:@"RealName"];
-//            _nameLabel.text = user.realName;
-//
-//            user.idValidate = [[_myAccountDic objectForKey:@"IdValidate"] intValue];
-//            user.userAddress = [_myAccountDic objectForKey:@"UserAddress"];
-//            user.email = [_myAccountDic objectForKey:@"Email"];
-//            [user saveUser];
-//            
-//        }else{
-//            [MBProgressHUD showError:msg toView:self.view];
-//        }
-//        [self.tableView reloadData];
-//    }];
-//}
+
 
 - (void)getAccountSaftData
 {
@@ -123,43 +88,22 @@ static NSString *accountSafeCell=@"AccountSafeCell";
         if (status == 1 || status == 2) {
             [MBProgressHUD showError:msg toView:self.view];
         }else{
-            
             NSDictionary * dataDic = dic[@"data"];
             _myAccountDic = dataDic[@"user"];
-            /*
-            UIImageView *iconImageView = [[UIImageView alloc]init];
-            [NetWorkingUtil setImage:iconImageView url:[_myAccountDic objectForKey:@"avatar"] defaultIconName:@"my_defaultIcon"];
-            UIImage *image = [iconImageView.image imageMakeRoundCornerSizeImageView:_iconButton.imageView];
-            [_iconButton setImage:image forState:UIControlStateNormal];
-            */
-            
+            _myBankInfoDic = dataDic[@"bankInfo"];
             NSString *avatar = [_myAccountDic objectForKey:@"avatar"];
             if (avatar.length > 0) {
                 [_iconButton sd_setImageWithURL:[[NSURL alloc] initWithString:avatar] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"my_defaultIcon"]];
             }
-
-            //            [_iconButton setTitle:[_myAccountDic objectForKey:@"UserName"] forState:UIControlStateNormal];
-            
             _iconButton.titleLabel.text = [_myAccountDic objectForKey:@"username"];
-            NSLog(@"%@",_iconButton.titleLabel.text);
             _userNameLabel.text = _iconButton.titleLabel.text;
-            
             User *user = [User shareUser];
-            //头像名字
             user.realName = [_myAccountDic objectForKey:@"realname"];
             _nameLabel.text = user.realName;
-            NSLog(@"------%@",user.realName);
             user.idValidate = [[_myAccountDic objectForKey:@"IdValidate"] intValue];
-            NSLog(@"------%d",user.idValidate);
-            
             user.bankInfo = [_myAccountDic objectForKey:@"bankInfo"];
-            NSLog(@"-----%@",user.bankInfo);
-            
             user.userAddress = [_myAccountDic objectForKey:@"UserAddress"];
-            NSLog(@"------%@",user.userAddress);
-            //电子邮箱
             user.email = [_myAccountDic objectForKey:@"email"];
-            NSLog(@"------%@",user.email);
             [user saveUser];
 
         }
@@ -354,17 +298,24 @@ static NSString *accountSafeCell=@"AccountSafeCell";
         }
         else if (indexPath.section == 0 && indexPath.row == 1)
         {
-            if ([[_myAccountDic objectForKey:@"PhoneValidate"] integerValue] == 0) {
-                detailText = @"未绑定";
-            }else{
-                detailText = [NSString stringWithFormat:@"%@",[[_myAccountDic objectForKey:@"Mobile"] stringByReplacingCharactersInRange:NSMakeRange(3, 4) withString:@"****"]];
-                cell.jianTouImageView.hidden = YES;
-            }
             
             title = @"银 行 卡";
             hideLine = YES;
+            detailText = _myBankInfoDic[@"bankName"];
+            cell.zhegnjainLabel.text = _myBankInfoDic[@"bankNumber"];
+            
+//            if ([[_myAccountDic objectForKey:@"PhoneValidate"] integerValue] == 0) {
+//                detailText = @"未绑定";
+//            }else{
+//                detailText = _myBankInfoDic[@"bankName"];
+//                cell.jianTouImageView.hidden = YES;
+//            }
+//            
+//            title = @"银 行 卡";
+//            hideLine = YES;
         }
-    [cell setuptitle:title detailText:detailText hideLine:hideLine jianTouImageView:jianTouImageView  zhegnjainLabel:zhegnjainLabel];
+        [cell setuptitle:title detailText:detailText hideLine:hideLine jianTouImageView:jianTouImageView  zhegnjainLabel:zhegnjainLabel];
+        
         return cell;
 
     }else{

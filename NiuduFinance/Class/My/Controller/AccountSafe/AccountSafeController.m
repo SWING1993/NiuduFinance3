@@ -7,7 +7,8 @@
 //
 
 #import "AccountSafeController.h"
-//#import "MyContentCell.h"
+#import "UIImageView+WebCache.h"
+#import "UIButton+WebCache.h"
 #import "AccountSafCell.h"
 #import "AccountSafeCell.h"
 #import "PSActionSheet.h"
@@ -122,14 +123,21 @@ static NSString *accountSafeCell=@"AccountSafeCell";
         if (status == 1 || status == 2) {
             [MBProgressHUD showError:msg toView:self.view];
         }else{
-
-            NSLog(@"--------%@",_myAccountArr);
+            
+            NSDictionary * dataDic = dic[@"data"];
+            _myAccountDic = dataDic[@"user"];
+            /*
             UIImageView *iconImageView = [[UIImageView alloc]init];
             [NetWorkingUtil setImage:iconImageView url:[_myAccountDic objectForKey:@"avatar"] defaultIconName:@"my_defaultIcon"];
             UIImage *image = [iconImageView.image imageMakeRoundCornerSizeImageView:_iconButton.imageView];
-            
             [_iconButton setImage:image forState:UIControlStateNormal];
+            */
             
+            NSString *avatar = [_myAccountDic objectForKey:@"avatar"];
+            if (avatar.length > 0) {
+                [_iconButton sd_setImageWithURL:[[NSURL alloc] initWithString:avatar] forState:UIControlStateNormal placeholderImage:[UIImage imageNamed:@"my_defaultIcon"]];
+            }
+
             //            [_iconButton setTitle:[_myAccountDic objectForKey:@"UserName"] forState:UIControlStateNormal];
             
             _iconButton.titleLabel.text = [_myAccountDic objectForKey:@"username"];

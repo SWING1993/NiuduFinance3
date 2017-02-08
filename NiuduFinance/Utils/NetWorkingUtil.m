@@ -457,7 +457,7 @@ static AFHTTPRequestOperationManager *manager;
             
         }
         
-        result(resultObj,statusInt,resultMsg);
+        result(obj,statusInt,resultMsg);
         
         NSLog(@"%@",resultObj);
         
